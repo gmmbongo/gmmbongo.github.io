@@ -2,7 +2,7 @@
 
 A clean, professional portfolio built with plain **HTML, CSS, and JavaScript** — no frameworks, no build tools, no dependencies.
 
-🌐 **Live:** [glodimbongo.github.io/portfolio](https://glodimbongo.github.io/portfolio)
+🌐 **Live:** [glodimbongo.github.io/portfolio](https://glodimbongo.github.io)
 
 ---
 
