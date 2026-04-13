@@ -1,0 +1,50 @@
+/* css/variables.css — Design tokens */
+
+:root {
+  /* ── Colours ── */
+  --navy:       #07111F;
+  --navy-mid:   #0D1B2E;
+  --navy-card:  #101E32;
+  --border:     rgba(255, 255, 255, 0.06);
+  --border-md:  rgba(255, 255, 255, 0.10);
+
+  /* Gold — Data Analytics */
+  --gold:       #C9A84C;
+  --gold-lt:    #E2C06A;
+  --gold-dim:   rgba(201, 168, 76, 0.12);
+  --gold-line:  rgba(201, 168, 76, 0.25);
+
+  /* Cyan — Information Security */
+  --cyan:       #3ECFCF;
+  --cyan-lt:    #7DDFDF;
+  --cyan-dim:   rgba(62, 207, 207, 0.12);
+  --cyan-line:  rgba(62, 207, 207, 0.25);
+
+  /* Blue — Web Development */
+  --blue:       #7AB4FF;
+  --blue-lt:    #A8CFFF;
+  --blue-dim:   rgba(122, 180, 255, 0.12);
+  --blue-line:  rgba(122, 180, 255, 0.25);
+
+  /* Neutrals */
+  --white:      #F4F7FF;
+  --mid:        #B8C2D8;
+  --slate:      #8A95AE;
+  --muted:      #4A5568;
+
+  /* ── Typography ── */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+
+  /* ── Spacing ── */
+  --nav-h:    66px;
+  --px:       60px;
+  --py:       80px;
+  --max-w:    1160px;
+
+  /* ── Transitions ── */
+  --ease:       cubic-bezier(0.23, 1, 0.32, 1);
+  --t-fast:     0.2s;
+  --t-med:      0.35s;
+  --t-slow:     0.6s;
+}

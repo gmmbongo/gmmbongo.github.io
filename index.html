@@ -1,165 +1,631 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Resume Template</title>
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Glodi Mbongo — Data Analyst, IT Security Specialist & Web Developer based in Louisville, KY." />
+  <title>Glodi Mbongo | Portfolio</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h1,
-        h2 {
-            color: #007bff;
-        }
-        .header {
-            text-align: center;
-        }
-        .header h1 {
-            margin: 10px 0;
-        }
-        .contact {
-            margin: 10px 0;
-            font-size: 14px;
-        }
-        .contact a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .section {
-            margin: 20px 0;
-        }
-        .section h2 {
-            margin-bottom: 10px;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-        }
-        .item {
-            margin-bottom: 15px;
-        }
-        .item h3 {
-            margin: 0;
-            font-size: 18px;
-            color: #555;
-        }
-        .item p {
-            margin: 5px 0;
-            font-size: 14px;
-        }
-        .skills ul {
-            list-style: none;
-            padding: 0;
-        }
-        .skills ul li {
-            display: inline-block;
-            background: #007bff;
-            color: #fff;
-            padding: 5px 10px;
-            margin: 5px 5px 5px 0;
-            border-radius: 4px;
-        }
-    </style>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-    <body>
-        <main class="container">
-            <section class="header">
-                <h1>Glodi Mbongo</h1>
-                <p class="contact">
-                    Email:
-                    <a href="mailto:yourname@example.com"
-                        >glodimbongo1@gmail.com</a
-                    >
-                    | Phone: (502) 751-7052 | LinkedIn:
-                    <a href="#">linkedin.com/in/glodi-mbongo/</a>
-                </p>
-            </section>
-            <section class="section">
-                <h2>Summary</h2>
-                <p>
-                    Aspiring Full-Stack Software developer and Data Analyst with a strong foundation in HTML, CSS, C#, Power BI. 
-                    Proficient in Microsoft Excel, including advanced formulas, pivot tables, and data analysis. 
-                    Currently pursuing a Bachelor’s degree in Computer Information Systems with focus in Web development and Process Managment 
-                    at University of Louisville.
-                </p>
-            </section>
-            <section class="section">
-                <h2>Work Experience</h2>
-                <div class="item">
-                    <h3>Web Design Intern - Frazier History Museum</h3>
-                    <p>February 2025 – Current</p>
-                    <p>
-                        Uploaded content and website redesign for fraziermuseum.org, enhancing user engagement and navigation
-                        Maintained and updated responsive web pages using HTML and CSS and utilized Squarespace for content
-                        updates and web page enhancements, ensuring responsive and visually appealing layouts.
-                    </p>
-                </div>
-                <div class="item">
-                    <h3>Amazon Associate - Amazon</h3>
-                    <p>August 2019 - Current</p>
-                    <p>
-                        Resolved issues related to customer returns and inventory issues, ensuring efficient processing and accuracy.
-                        Collaborated with Amazon associates, process assistants, and managers to identify and resolve return-related challenges.
-                    </p>
-                </div>
-            </section>
-            <div class="section">
-                <h2>Education</h2>
-                <div class="item">
-                    <h3>Bachelor of Science - University of Louisville</h3>
-                    <p>May 2026</p>
-                </div>
-                <div class="item">
-                    <h3>Associate of Applied Science - Jefferson Community & Technical College</h3>
-                    <p>May 2024</p>
-                </div>
-            </section>
-            <section class="section">
-                <h2>Skills</h2>
-                <div class="skills">
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                        <li>C#</li>
-                        <li>Excel</li>
-                        <li>Power BI</li>
-                        <li>Team Leadership</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="section">
-                <h2>Projects</h2>
-                <div class="item">
-                    <h3>Smith's Auto Repairs Price Quote Calculator</h3>
-                    <p>
-                        The Smith's Auto Repairs Price Quote Calculator is a C# 
-                        application designed to streamline the price quoting process for Smith's Auto Repairs.
-                    </p>
-                </div>
-                <div class="item">
-                    <h3>Pet4Life Louisville Website</h3>
-                    <p>
-                        Pet4Life Louisville is a responsive, user-friendly website designed to connect pet lovers with local adoption centers, 
-                        resources, and events. As the Web Developer, I was responsible for designing and building the site’s layout and structure using WordPress and custom HTML/CSS.
-                    </p>
-                </div>
-            </section>
-        </main>
-    </body>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════ NAV ═══ -->
+  <nav class="nav" id="nav">
+    <div class="nav__brand">
+      <span class="nav__name">Glodi Mbongo</span>
+      <span class="nav__sub">Data Analytics · Info Security · Web Dev</span>
+    </div>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#home"           class="nav__link active" data-section="home">Home</a></li>
+      <li><a href="#about"          class="nav__link" data-section="about">About</a></li>
+      <li><a href="#skills"         class="nav__link" data-section="skills">Skills</a></li>
+      <li><a href="#projects"       class="nav__link" data-section="projects">Projects</a></li>
+      <li><a href="#certifications" class="nav__link" data-section="certifications">Certifications</a></li>
+      <li><a href="#contact"        class="nav__link" data-section="contact">Contact</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════ HERO ═══ -->
+  <section id="home" class="hero">
+    <div class="hero__left">
+      <div class="hero__tag fade-up">
+        <span class="hero__tag-line"></span>
+        <span>Louisville, KY · Available for Opportunities</span>
+      </div>
+
+      <!-- Profile photo -->
+      <div class="hero__photo-row fade-up" style="--delay:0.06s">
+        <div class="hero__avatar">
+          <img src="assets/profile.jpg" alt="Glodi Mbongo" />
+        </div>
+        <div class="hero__avatar-meta">
+          <span class="hero__avatar-name">Glodi Mbongo</span>
+          <span class="hero__avatar-status"><span class="status-dot"></span>Open to Work</span>
+        </div>
+      </div>
+
+      <h1 class="hero__name fade-up" style="--delay:0.08s">
+        Glodi<br><span class="accent">Mbongo.</span>
+      </h1>
+
+      <p class="hero__role fade-up" style="--delay:0.14s">Analyst. Security Specialist. Web Developer.</p>
+
+      <div class="hero__pills fade-up" style="--delay:0.18s">
+        <span class="pill pill--da">📊 Data Analytics</span>
+        <span class="pill pill--sec">🔒 Info Security</span>
+        <span class="pill pill--web">🌐 Web Dev</span>
+      </div>
+
+      <p class="hero__bio fade-up" style="--delay:0.22s">
+        Computer Information Systems student at the University of Louisville (GPA&nbsp;3.71) with a focus in Cybersecurity, and an A.A.S. in Information Assurance (GPA&nbsp;3.81) from JCTC. Co-founder of GM Digital. I bring a rare triple perspective: turning data into insights, keeping systems secure, and building high-performance websites.
+      </p>
+
+      <div class="hero__stats fade-up" style="--delay:0.26s">
+        <div class="stat">
+          <span class="stat__val accent">100K+</span>
+          <span class="stat__lbl">Records Analyzed</span>
+        </div>
+        <div class="stat">
+          <span class="stat__val cyan">A+ &amp; Net+</span>
+          <span class="stat__lbl">CompTIA Certs</span>
+        </div>
+        <div class="stat">
+          <span class="stat__val blue">3 yrs+</span>
+          <span class="stat__lbl">GM Digital Founder</span>
+        </div>
+        <div class="stat">
+          <span class="stat__val cyan">3.81</span>
+          <span class="stat__lbl">GPA · JCTC</span>
+        </div>
+      </div>
+
+      <div class="hero__actions fade-up" style="--delay:0.30s">
+        <a href="#projects"       class="btn btn--solid">View Projects</a>
+        <a href="#certifications" class="btn btn--cyan">Certifications</a>
+        <a href="#contact"        class="btn btn--outline">Get In Touch</a>
+      </div>
+    </div>
+
+    <div class="hero__right">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero__cards">
+        <div class="info-card info-card--da fade-up" style="--delay:0.10s">
+          <div class="info-card__label">Data Analytics Role</div>
+          <div class="info-card__val">Data Analyst Apprentice</div>
+          <div class="info-card__sub">The Global Career Accelerator · Remote · 2026</div>
+        </div>
+        <div class="info-card info-card--sec fade-up" style="--delay:0.16s">
+          <div class="info-card__label">Security Education</div>
+          <div class="info-card__val">A.A.S. Information Assurance</div>
+          <div class="info-card__sub">JCTC · GPA 3.81 · Dean's List · Phi Theta Kappa</div>
+        </div>
+        <div class="info-card info-card--web fade-up" style="--delay:0.22s">
+          <div class="info-card__label">Co-Founder · Web &amp; Data Agency</div>
+          <div class="info-card__val">GM Digital · Self-Employed</div>
+          <div class="info-card__sub">Mar 2023 – Present · Louisville, KY · Remote</div>
+        </div>
+        <div class="info-card info-card--sec fade-up" style="--delay:0.28s">
+          <div class="info-card__label">Security Certifications</div>
+          <div class="info-card__val">CompTIA A+, Network+ &amp; Cisco</div>
+          <div class="info-card__sub">Issued 2023–2024 · JCTC</div>
+        </div>
+        <div class="info-card info-card--da fade-up" style="--delay:0.34s">
+          <div class="info-card__label">Analytics Stack</div>
+          <div class="info-card__val">Python · SQL · R · Power BI · Tableau</div>
+          <div class="info-card__sub">Pandas · NumPy · Advanced Excel</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ ABOUT ═══ -->
+  <section id="about" class="section section--dark">
+    <div class="wrap">
+      <div class="section__header fade-up">
+        <div class="eyebrow"><span class="eyebrow__num">02</span><span class="eyebrow__line"></span><span class="eyebrow__text">About Me &amp; Experience</span></div>
+        <h2 class="section__title">Background &amp; Full Experience</h2>
+      </div>
+
+      <!-- Intro blocks -->
+      <div class="intro-grid fade-up">
+        <div class="intro-block intro-block--da">
+          <div class="intro-block__head"><span>📊</span><strong>Data Analytics</strong></div>
+          <p>100K+ record datasets cleaned and analysed using Python and SQL. BI dashboards in Power BI and Tableau. Currently apprenticing at The Global Career Accelerator.</p>
+        </div>
+        <div class="intro-block intro-block--sec">
+          <div class="intro-block__head"><span>🔒</span><strong>Info Security &amp; Networking</strong></div>
+          <p>CompTIA A+, Network+, and Cisco Networking Enhanced certified. A.A.S. in Information Assurance (GPA 3.81). IT support experience at ONEM in Kinshasa, DRC.</p>
+        </div>
+        <div class="intro-block intro-block--web">
+          <div class="intro-block__head"><span>🌐</span><strong>Web Development</strong></div>
+          <p>Co-founder of GM Digital (2023–Present). Building responsive websites with HTML, CSS, JavaScript, MySQL, and WordPress for small and medium businesses.</p>
+        </div>
+      </div>
+
+      <div class="about-layout">
+        <!-- Timeline -->
+        <div class="timeline">
+
+          <p class="tl-label tl-label--da fade-up">📊 Data Analytics Experience</p>
+          <div class="tl-track">
+            <div class="tl-item fade-up">
+              <div class="tl-dot tl-dot--da"></div>
+              <div class="tl-date">Jan 2026 – Present</div>
+              <div class="tl-role">Data Analyst Apprentice</div>
+              <div class="tl-org tl-org--da">The Global Career Accelerator · Remote</div>
+              <ul class="tl-pts tl-pts--da">
+                <li>Analysed 6,000+ trending YouTube videos to identify content performance drivers</li>
+                <li>Investigated BART ridership records to uncover commuting trends</li>
+                <li>Evaluated delivery data across major U.S. markets for efficiency insights</li>
+              </ul>
+            </div>
+            <div class="tl-item fade-up">
+              <div class="tl-dot tl-dot--da"></div>
+              <div class="tl-date">Jul 2025 – Present</div>
+              <div class="tl-role">REACH Peer Tutor</div>
+              <div class="tl-org tl-org--da">University of Louisville · Louisville, KY</div>
+              <ul class="tl-pts tl-pts--da">
+                <li>Supported students in programming and data analysis (1:1 and groups up to 5)</li>
+                <li>Designed 5+ individualised learning plans; boosted exam scores by 20%</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="tl-label tl-label--sec fade-up">🔒 Information Security &amp; IT Experience</p>
+          <div class="tl-track">
+            <div class="tl-item fade-up">
+              <div class="tl-dot tl-dot--sec"></div>
+              <div class="tl-date">Feb 2017 – Jul 2018 · 1 yr 6 mos</div>
+              <div class="tl-role">IT Support Specialist</div>
+              <div class="tl-org tl-org--sec">ONEM · Kinshasa, DRC · On-site · Internship</div>
+              <ul class="tl-pts tl-pts--sec">
+                <li>Analysed, installed, and troubleshot technology issues to enhance operational efficiency</li>
+                <li>Identified user needs; updated hardware and systems to improve user experience</li>
+                <li>Collaborated via Microsoft Teams, Outlook, and SharePoint to streamline communications</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="tl-label tl-label--web fade-up">🌐 Web Development Experience</p>
+          <div class="tl-track">
+            <div class="tl-item fade-up">
+              <div class="tl-dot tl-dot--web"></div>
+              <div class="tl-date">Mar 2023 – Present · 3 yrs+</div>
+              <div class="tl-role">Co-Founder</div>
+              <div class="tl-org tl-org--web">GM Digital · Self-Employed · Louisville, KY · Remote</div>
+              <ul class="tl-pts tl-pts--web">
+                <li>Co-founded GM Digital delivering web development and data-driven solutions for SMBs</li>
+                <li>Developed responsive websites using HTML, CSS, JavaScript, and MySQL — improving speed and SEO</li>
+                <li>Leveraged WordPress to create custom themes and plugins tailored to client needs</li>
+              </ul>
+            </div>
+            <div class="tl-item fade-up">
+              <div class="tl-dot tl-dot--web"></div>
+              <div class="tl-date">Feb 2025 – Jun 2025 · 5 mos</div>
+              <div class="tl-role">Web Development Intern</div>
+              <div class="tl-org tl-org--web">Frazier History Museum · Louisville, KY · On-site</div>
+              <ul class="tl-pts tl-pts--web">
+                <li>Maintained and updated responsive web pages using HTML, CSS, and Squarespace</li>
+                <li>Designed graphics for web and social media; led fraziermuseum.org redesign</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="tl-label tl-label--shared fade-up">🏢 Additional Experience</p>
+          <div class="tl-track">
+            <div class="tl-item fade-up">
+              <div class="tl-dot tl-dot--shared"></div>
+              <div class="tl-date">Aug 2019 – Present</div>
+              <div class="tl-role">Fulfillment Associate II — Process Guide</div>
+              <div class="tl-org tl-org--shared">Amazon · Shepherdsville, KY</div>
+              <ul class="tl-pts tl-pts--shared">
+                <li>Completed Amazon Tier 1 Development Program (Goal Setting, Time Management)</li>
+                <li>Led a team of 10+, ensuring quality compliance and operational standards</li>
+                <li>Resolved 200+ return and processing issues per shift as a Problem Solver</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="about-sidebar">
+          <div class="scard scard--photo fade-up">
+            <div class="about__avatar">
+              <img src="assets/profile.jpg" alt="Glodi Mbongo" />
+            </div>
+            <div class="about__avatar-name">Glodi Mbongo</div>
+            <div class="about__avatar-title">Data Analyst · IT Security · Web Dev</div>
+            <div class="about__avatar-loc">📍 Louisville, KY</div>
+          </div>
+
+          <div class="scard scard--da fade-up">
+            <div class="scard__head">Analytics Education</div>
+            <div class="scard__name">University of Louisville</div>
+            <div class="scard__deg">B.S. Computer Information Systems<br>Focus in Cybersecurity</div>
+            <div class="scard__note">Expected May 2026</div>
+            <span class="gpa gpa--da">GPA 3.71</span>
+          </div>
+
+          <div class="scard scard--sec fade-up">
+            <div class="scard__head">Security Education</div>
+            <div class="scard__name">Jefferson Community &amp; Technical College</div>
+            <div class="scard__deg">A.A.S. — Computer &amp; Information Systems Security / Information Assurance</div>
+            <div class="scard__note">Aug 2020 – Dec 2023</div>
+            <span class="gpa gpa--sec">GPA 3.81</span>
+            <div class="scard__honors">Dean's List Fall 2022 &amp; 2023 · President's Scholars Fall 2023 · Phi Theta Kappa</div>
+          </div>
+
+          <div class="scard scard--dual fade-up">
+            <div class="scard__head">Contact</div>
+            <div class="contact-list">
+              <div>📧 <a href="mailto:glodimbongo1@gmail.com">glodimbongo1@gmail.com</a></div>
+              <div>📞 (502) 751-7052</div>
+              <div>📍 Louisville, KY</div>
+              <div>🔗 <a href="https://linkedin.com/in/glodi-mbongo" target="_blank" rel="noreferrer">LinkedIn Profile</a></div>
+              <div>💻 <a href="https://github.com/glodimbongo" target="_blank" rel="noreferrer">GitHub Profile</a></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SKILLS ═══ -->
+  <section id="skills" class="section section--mid">
+    <div class="wrap">
+      <div class="section__header fade-up">
+        <div class="eyebrow"><span class="eyebrow__num">03</span><span class="eyebrow__line"></span><span class="eyebrow__text">Technical Skills</span></div>
+        <h2 class="section__title">Combined Technical Toolkit</h2>
+      </div>
+
+      <div class="skills-intro-row fade-up">
+        <div class="si si--da"><div class="si__label">📊 Data Analytics</div><p>Python, SQL, R, Power BI, and Tableau for end-to-end data work — pipeline cleaning to BI dashboards.</p></div>
+        <div class="si si--sec"><div class="si__label">🔒 Security &amp; Networking</div><p>CompTIA A+, Network+, and Cisco certified. Hardware, networking, endpoint security, and Microsoft 365 admin.</p></div>
+        <div class="si si--web"><div class="si__label">🌐 Web Development</div><p>3+ years building responsive, high-performance sites with HTML, CSS, JavaScript, MySQL, and WordPress.</p></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Programming -->
+        <div class="skill-card skill-card--da fade-up">
+          <div class="skill-card__icon">🐍</div>
+          <div class="skill-card__name">Programming</div>
+          <div class="bars">
+            <div class="bar-row"><span>Python (Pandas, NumPy)</span><span class="bar-pct bar-pct--da">90%</span><div class="bar-track"><div class="bar-fill bar-fill--da" data-w="90"></div></div></div>
+            <div class="bar-row"><span>SQL / MySQL</span><span class="bar-pct bar-pct--da">85%</span><div class="bar-track"><div class="bar-fill bar-fill--da" data-w="85"></div></div></div>
+            <div class="bar-row"><span>R</span><span class="bar-pct bar-pct--da">75%</span><div class="bar-track"><div class="bar-fill bar-fill--da" data-w="75"></div></div></div>
+            <div class="bar-row"><span>JavaScript</span><span class="bar-pct bar-pct--web">75%</span><div class="bar-track"><div class="bar-fill bar-fill--web" data-w="75"></div></div></div>
+            <div class="bar-row"><span>C#</span><span class="bar-pct bar-pct--da">55%</span><div class="bar-track"><div class="bar-fill bar-fill--da" data-w="55"></div></div></div>
+          </div>
+        </div>
+
+        <!-- Analytics & BI -->
+        <div class="skill-card skill-card--da fade-up">
+          <div class="skill-card__icon">📊</div>
+          <div class="skill-card__name">Analytics &amp; BI</div>
+          <div class="bars">
+            <div class="bar-row"><span>Microsoft Excel (Certified)</span><span class="bar-pct bar-pct--da">95%</span><div class="bar-track"><div class="bar-fill bar-fill--da" data-w="95"></div></div></div>
+            <div class="bar-row"><span>Google Sheets</span><span class="bar-pct bar-pct--da">88%</span><div class="bar-track"><div class="bar-fill bar-fill--da" data-w="88"></div></div></div>
+            <div class="bar-row"><span>Power BI</span><span class="bar-pct bar-pct--da">78%</span><div class="bar-track"><div class="bar-fill bar-fill--da" data-w="78"></div></div></div>
+            <div class="bar-row"><span>Tableau</span><span class="bar-pct bar-pct--da">72%</span><div class="bar-track"><div class="bar-fill bar-fill--da" data-w="72"></div></div></div>
+          </div>
+        </div>
+
+        <!-- Networking & Security -->
+        <div class="skill-card skill-card--sec fade-up">
+          <div class="skill-card__icon">🔒</div>
+          <div class="skill-card__name">Networking &amp; Security</div>
+          <div class="bars">
+            <div class="bar-row"><span>CompTIA A+</span><span class="bar-pct bar-pct--sec">90%</span><div class="bar-track"><div class="bar-fill bar-fill--sec" data-w="90"></div></div></div>
+            <div class="bar-row"><span>CompTIA Network+</span><span class="bar-pct bar-pct--sec">85%</span><div class="bar-track"><div class="bar-fill bar-fill--sec" data-w="85"></div></div></div>
+            <div class="bar-row"><span>Cisco Networking Enhanced</span><span class="bar-pct bar-pct--sec">80%</span><div class="bar-track"><div class="bar-fill bar-fill--sec" data-w="80"></div></div></div>
+            <div class="bar-row"><span>TCP/IP &amp; Protocols</span><span class="bar-pct bar-pct--sec">82%</span><div class="bar-track"><div class="bar-fill bar-fill--sec" data-w="82"></div></div></div>
+          </div>
+        </div>
+
+        <!-- Hardware & IT -->
+        <div class="skill-card skill-card--sec fade-up">
+          <div class="skill-card__icon">🖥️</div>
+          <div class="skill-card__name">Hardware &amp; IT Support</div>
+          <div class="bars">
+            <div class="bar-row"><span>PC Hardware / Troubleshooting</span><span class="bar-pct bar-pct--sec">88%</span><div class="bar-track"><div class="bar-fill bar-fill--sec" data-w="88"></div></div></div>
+            <div class="bar-row"><span>OS Installation &amp; Config</span><span class="bar-pct bar-pct--sec">83%</span><div class="bar-track"><div class="bar-fill bar-fill--sec" data-w="83"></div></div></div>
+            <div class="bar-row"><span>TestOut PC Pro</span><span class="bar-pct bar-pct--sec">85%</span><div class="bar-track"><div class="bar-fill bar-fill--sec" data-w="85"></div></div></div>
+            <div class="bar-row"><span>Microsoft 365 Admin</span><span class="bar-pct bar-pct--sec">80%</span><div class="bar-track"><div class="bar-fill bar-fill--sec" data-w="80"></div></div></div>
+          </div>
+        </div>
+
+        <!-- Web Dev — spans 2 cols -->
+        <div class="skill-card skill-card--web skill-card--wide fade-up">
+          <div class="skill-card__icon">🌐</div>
+          <div class="skill-card__name">Web Development</div>
+          <div class="bars bars--two-col">
+            <div class="bar-row"><span>HTML / CSS</span><span class="bar-pct bar-pct--web">90%</span><div class="bar-track"><div class="bar-fill bar-fill--web" data-w="90"></div></div></div>
+            <div class="bar-row"><span>WordPress Themes &amp; Plugins</span><span class="bar-pct bar-pct--web">80%</span><div class="bar-track"><div class="bar-fill bar-fill--web" data-w="80"></div></div></div>
+            <div class="bar-row"><span>JavaScript</span><span class="bar-pct bar-pct--web">75%</span><div class="bar-track"><div class="bar-fill bar-fill--web" data-w="75"></div></div></div>
+            <div class="bar-row"><span>Responsive Design / SEO</span><span class="bar-pct bar-pct--web">82%</span><div class="bar-track"><div class="bar-fill bar-fill--web" data-w="82"></div></div></div>
+            <div class="bar-row"><span>MySQL</span><span class="bar-pct bar-pct--web">78%</span><div class="bar-track"><div class="bar-fill bar-fill--web" data-w="78"></div></div></div>
+            <div class="bar-row"><span>Squarespace</span><span class="bar-pct bar-pct--web">78%</span><div class="bar-track"><div class="bar-fill bar-fill--web" data-w="78"></div></div></div>
+          </div>
+        </div>
+
+        <!-- Data competencies -->
+        <div class="skill-card skill-card--da fade-up">
+          <div class="skill-card__icon">🔬</div>
+          <div class="skill-card__name">Data Competencies</div>
+          <div class="tag-cloud">
+            <span class="tag tag--da">Data Cleaning</span><span class="tag tag--da">EDA</span>
+            <span class="tag tag--da">Visualisation</span><span class="tag tag--da">Feature Engineering</span>
+            <span class="tag tag--da">Statistical Analysis</span><span class="tag tag--da">Pipeline Building</span>
+            <span class="tag tag--da">Customer Segmentation</span><span class="tag tag--da">Trend Analysis</span>
+          </div>
+        </div>
+
+        <!-- Security competencies -->
+        <div class="skill-card skill-card--sec fade-up">
+          <div class="skill-card__icon">🛡️</div>
+          <div class="skill-card__name">Security Competencies</div>
+          <div class="tag-cloud">
+            <span class="tag tag--sec">Endpoint Security</span><span class="tag tag--sec">System Hardening</span>
+            <span class="tag tag--sec">Threat Analysis</span><span class="tag tag--sec">Access Control</span>
+            <span class="tag tag--sec">Incident Response</span><span class="tag tag--sec">Risk Assessment</span>
+            <span class="tag tag--sec">Help Desk</span><span class="tag tag--sec">Information Assurance</span>
+          </div>
+        </div>
+
+        <!-- Tools — spans 2 cols -->
+        <div class="skill-card skill-card--shared skill-card--wide fade-up">
+          <div class="skill-card__icon">⚙️</div>
+          <div class="skill-card__name">Tools &amp; Platforms</div>
+          <div class="tag-cloud">
+            <span class="tag tag--da">GitHub</span><span class="tag tag--da">VS Code</span>
+            <span class="tag tag--da">Kaggle</span><span class="tag tag--da">Google Workspace</span>
+            <span class="tag tag--da">Canva</span>
+            <span class="tag tag--sec">Microsoft Teams</span><span class="tag tag--sec">SharePoint</span>
+            <span class="tag tag--sec">Outlook</span><span class="tag tag--sec">Microsoft 365</span>
+            <span class="tag tag--web">WordPress</span><span class="tag tag--web">Squarespace</span>
+            <span class="tag tag--web">Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ PROJECTS ═══ -->
+  <section id="projects" class="section section--dark">
+    <div class="wrap">
+      <div class="section__header fade-up">
+        <div class="eyebrow"><span class="eyebrow__num">04</span><span class="eyebrow__line"></span><span class="eyebrow__text">Portfolio of Work</span></div>
+        <h2 class="section__title">Projects — All Tracks</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Featured DA -->
+        <div class="proj-card proj-card--da proj-card--featured fade-up">
+          <div class="proj-card__inner">
+            <div>
+              <div class="proj-card__top">
+                <span class="proj-card__num">01 · DA · Featured</span>
+                <span class="proj-card__icon">🏨</span>
+              </div>
+              <h3 class="proj-card__title">Hotel Booking Data Cleaning &amp; Preparation Pipeline</h3>
+              <p class="proj-card__desc">Engineered a full cleaning pipeline for a 119K+ record hotel booking dataset to support downstream analysis of cancellation behaviour, lead time, and customer segmentation.</p>
+              <ul class="proj-card__bullets">
+                <li>Resolved missing values using categorical replacement, sentinel values, and row removal</li>
+                <li>Removed duplicates, standardised fields, converted data types for accuracy</li>
+                <li>Engineered lead-time bins and customer segmentation subsets for reporting</li>
+              </ul>
+              <div class="proj-card__stack">
+                <span>Python</span><span>Pandas</span><span>NumPy</span><span>Feature Engineering</span>
+              </div>
+              <a href="#" class="proj-card__link">View on GitHub →</a>
+            </div>
+            <div class="proj-metrics">
+              <div class="proj-metrics__head">Pipeline Metrics</div>
+              <div class="proj-metric"><div class="proj-metric__lbl">Records Processed</div><div class="proj-metric__bar"><div class="proj-metric__fill proj-metric__fill--da" style="width:100%"></div></div><div class="proj-metric__val">119,390 rows</div></div>
+              <div class="proj-metric"><div class="proj-metric__lbl">Null Values Resolved</div><div class="proj-metric__bar"><div class="proj-metric__fill proj-metric__fill--da" style="width:87%"></div></div><div class="proj-metric__val">87%</div></div>
+              <div class="proj-metric"><div class="proj-metric__lbl">Feature Subsets</div><div class="proj-metric__bar"><div class="proj-metric__fill proj-metric__fill--da" style="width:60%"></div></div><div class="proj-metric__val">Multiple</div></div>
+              <div class="proj-meta-stats">
+                <div><span class="proj-meta-val">119K</span><span class="proj-meta-lbl">Records</span></div>
+                <div><span class="proj-meta-val">3</span><span class="proj-meta-lbl">Null Strategies</span></div>
+                <div><span class="proj-meta-val">Apr '26</span><span class="proj-meta-lbl">Completed</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DA projects -->
+        <div class="proj-card proj-card--da fade-up">
+          <div class="proj-card__top"><span class="proj-card__num">02 · DA · Capstone</span><span class="proj-card__icon">🚲</span></div>
+          <h3 class="proj-card__title">Cyclistic Bike-Share Behavioural Analysis</h3>
+          <p class="proj-card__desc">Analysed 140K+ Chicago bike-share trips to reveal differences between casual riders and annual members, delivering marketing conversion recommendations.</p>
+          <ul class="proj-card__bullets"><li>Built 11+ visualisations: heatmaps, boxplots, geographic maps</li><li>Identified usage patterns by day, hour, month, and bike type</li></ul>
+          <div class="proj-card__stack"><span>R</span><span>ggplot2</span><span>EDA</span><span>Data Viz</span></div>
+          <a href="#" class="proj-card__link">View on GitHub →</a>
+        </div>
+
+        <div class="proj-card proj-card--da fade-up">
+          <div class="proj-card__top"><span class="proj-card__num">03 · DA · Apprenticeship</span><span class="proj-card__icon">▶️</span></div>
+          <h3 class="proj-card__title">YouTube Engagement Metrics Analysis</h3>
+          <p class="proj-card__desc">Analysed 6,000+ trending YouTube videos to identify performance drivers, producing a stakeholder-ready strategy report.</p>
+          <ul class="proj-card__bullets"><li>Identified top categories and posting-time patterns driving virality</li><li>Correlated views, likes, and comments to surface engagement patterns</li></ul>
+          <div class="proj-card__stack"><span>Python</span><span>Pandas</span><span>EDA</span><span>Visualisation</span></div>
+          <a href="#" class="proj-card__link">View on GitHub →</a>
+        </div>
+
+        <div class="proj-card proj-card--da fade-up">
+          <div class="proj-card__top"><span class="proj-card__num">04 · DA · Apprenticeship</span><span class="proj-card__icon">🚇</span></div>
+          <h3 class="proj-card__title">BART Ridership &amp; U.S. Delivery Trend Analysis</h3>
+          <p class="proj-card__desc">Investigated BART ridership records and U.S. delivery market data to uncover commuting trends and regional efficiency opportunities.</p>
+          <ul class="proj-card__bullets"><li>Uncovered peak ridership trends informing infrastructure planning</li><li>Identified region-specific delivery inefficiencies across U.S. markets</li></ul>
+          <div class="proj-card__stack"><span>SQL</span><span>Python</span><span>Statistical Analysis</span></div>
+          <a href="#" class="proj-card__link">View on GitHub →</a>
+        </div>
+
+        <!-- SEC projects -->
+        <div class="proj-card proj-card--sec fade-up">
+          <div class="proj-card__top"><span class="proj-card__num">05 · SEC · IT Support</span><span class="proj-card__icon">🛡️</span></div>
+          <h3 class="proj-card__title">IT Infrastructure Support — ONEM, Kinshasa</h3>
+          <p class="proj-card__desc">Sole IT Support Specialist at ONEM over 1.5 years, managing hardware, systems, communications, and user support.</p>
+          <ul class="proj-card__bullets"><li>Analysed and resolved hardware/software issues across departments</li><li>Administered Microsoft 365: Teams, Outlook, SharePoint</li></ul>
+          <div class="proj-card__stack"><span>IT Support</span><span>Hardware</span><span>Microsoft 365</span></div>
+          <a href="#" class="proj-card__link">View Details →</a>
+        </div>
+
+        <!-- Web Dev featured -->
+        <div class="proj-card proj-card--web proj-card--featured fade-up">
+          <div class="proj-card__inner">
+            <div>
+              <div class="proj-card__top"><span class="proj-card__num">06 · Web Dev · Featured</span><span class="proj-card__icon">🌐</span></div>
+              <h3 class="proj-card__title">GM Digital — Web &amp; Data Solutions Agency</h3>
+              <p class="proj-card__desc">Co-founded GM Digital in March 2023, a remote web development and data solutions agency serving SMBs in Louisville, KY — now 3+ years running.</p>
+              <ul class="proj-card__bullets">
+                <li>Built responsive, high-performance websites using HTML, CSS, JavaScript, and MySQL</li>
+                <li>Developed custom WordPress themes and plugins tailored to client needs</li>
+                <li>Managed full project lifecycle from discovery through deployment</li>
+              </ul>
+              <div class="proj-card__stack"><span>HTML/CSS</span><span>JavaScript</span><span>MySQL</span><span>WordPress</span><span>SEO</span></div>
+              <a href="#" class="proj-card__link">View GM Digital →</a>
+            </div>
+            <div class="proj-metrics proj-metrics--web">
+              <div class="proj-metrics__head">Agency Overview</div>
+              <div class="proj-metric"><div class="proj-metric__lbl">Years Operating</div><div class="proj-metric__bar"><div class="proj-metric__fill proj-metric__fill--web" style="width:100%"></div></div><div class="proj-metric__val">3+ Years</div></div>
+              <div class="proj-metric"><div class="proj-metric__lbl">Tech Stack</div><div class="proj-metric__bar"><div class="proj-metric__fill proj-metric__fill--web" style="width:85%"></div></div><div class="proj-metric__val">5+ Technologies</div></div>
+              <div class="proj-meta-stats">
+                <div><span class="proj-meta-val">2023</span><span class="proj-meta-lbl">Founded</span></div>
+                <div><span class="proj-meta-val">WP</span><span class="proj-meta-lbl">Custom Builds</span></div>
+                <div><span class="proj-meta-val">SMB</span><span class="proj-meta-lbl">Market</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ CERTIFICATIONS ═══ -->
+  <section id="certifications" class="section section--mid">
+    <div class="wrap">
+      <div class="section__header fade-up">
+        <div class="eyebrow"><span class="eyebrow__num">05</span><span class="eyebrow__line"></span><span class="eyebrow__text">Credentials &amp; Certifications</span></div>
+        <h2 class="section__title">Full Certification Record</h2>
+      </div>
+
+      <!-- Stat counters -->
+      <div class="cert-stats fade-up">
+        <div class="cert-stat cert-stat--da"><span class="cert-stat__val" data-target="9">0</span><span class="cert-stat__lbl">DA Credentials</span></div>
+        <div class="cert-stat cert-stat--sec"><span class="cert-stat__val" data-target="7">0</span><span class="cert-stat__lbl">Security / Net Creds</span></div>
+        <div class="cert-stat cert-stat--web"><span class="cert-stat__val" data-target="16">0</span><span class="cert-stat__lbl">Total Credentials</span></div>
+      </div>
+
+      <!-- DA certs -->
+      <div class="cert-group-label cert-group-label--da fade-up">📊 Data Analytics</div>
+      <div class="certs-grid fade-up">
+        <div class="cert-card cert-card--da"><h4>Python &amp; SQL for Data Analysts</h4><div class="cert-card__issuer">CodeYou</div><div class="cert-card__tags"><span>Python</span><span>SQL</span><span>Data Analytics</span></div><span class="badge badge--prog">In Progress</span></div>
+        <div class="cert-card cert-card--da"><h4>Microsoft Office Specialist: Excel Associate</h4><div class="cert-card__issuer">Microsoft · Dec 2024</div><div class="cert-card__tags"><span>Advanced Excel</span><span>Data Analysis</span></div><span class="badge badge--done">Earned</span></div>
+        <div class="cert-card cert-card--da"><h4>SQL for Data Analysis</h4><div class="cert-card__issuer">LinkedIn · Dec 2024</div><div class="cert-card__tags"><span>SQL</span><span>Data Analysis</span></div><span class="badge badge--done">Earned</span></div>
+        <div class="cert-card cert-card--da"><h4>Power BI Bootcamp</h4><div class="cert-card__issuer">Foresight BI &amp; Analytics · Nov 2024 · ID: Wjfdggtn4f</div><div class="cert-card__tags"><span>Power BI</span><span>Data Modeling</span></div><span class="badge badge--done">Earned</span></div>
+        <div class="cert-card cert-card--da"><h4>Foundations: Data, Data, Everywhere</h4><div class="cert-card__issuer">Google · Mar 2025 · ID: CME42PRSDATY</div><div class="cert-card__tags"><span>Google DA</span></div><span class="badge badge--done">Earned</span></div>
+        <div class="cert-card cert-card--da"><h4>Ask Questions to Make Data-Driven Decisions</h4><div class="cert-card__issuer">Google · Dec 2025 · ID: E9DD5Z8ZW9F8</div><div class="cert-card__tags"><span>Google DA</span></div><span class="badge badge--done">Earned</span></div>
+        <div class="cert-card cert-card--da"><h4>Level 1: Excel White Belt</h4><div class="cert-card__issuer">McGraw Hill · Oct 2024 · ID: 120023595</div><div class="cert-card__tags"><span>Excel</span><span>Pivot Tables</span></div><span class="badge badge--done">Earned</span></div>
+        <div class="cert-card cert-card--da"><h4>Google Data Analytics Professional Certificate</h4><div class="cert-card__issuer">Google via Merit America</div><div class="cert-card__tags"><span>Full DA Certificate</span></div><span class="badge badge--soon">Apr 2026</span></div>
+        <div class="cert-card cert-card--da"><h4>Microsoft Power BI Certification</h4><div class="cert-card__issuer">Microsoft</div><div class="cert-card__tags"><span>Power BI</span></div><span class="badge badge--prog">In Progress</span></div>
+      </div>
+
+      <!-- Security certs -->
+      <div class="cert-group-label cert-group-label--sec fade-up">🔒 Information Security &amp; Networking</div>
+      <div class="certs-grid fade-up">
+        <div class="cert-card cert-card--sec"><h4>CompTIA A+</h4><div class="cert-card__issuer">JCTC · May 2024</div><div class="cert-card__tags"><span>Hardware</span><span>Troubleshooting</span></div><span class="badge badge--done">Earned</span></div>
+        <div class="cert-card cert-card--sec"><h4>CompTIA Network+</h4><div class="cert-card__issuer">JCTC · May 2023</div><div class="cert-card__tags"><span>Networking</span><span>TCP/IP</span></div><span class="badge badge--done">Earned</span></div>
+        <div class="cert-card cert-card--sec"><h4>Cisco Networking Enhanced</h4><div class="cert-card__issuer">JCTC · Dec 2023</div><div class="cert-card__tags"><span>Cisco</span><span>Network Config</span></div><span class="badge badge--done">Earned</span></div>
+        <div class="cert-card cert-card--sec"><h4>TestOut PC Pro Certification</h4><div class="cert-card__issuer">TestOut Corporation · Aug 2022 · ID: 6-1C6-XCHPB</div><div class="cert-card__tags"><span>PC Hardware</span></div><span class="badge badge--done">Earned</span></div>
+        <div class="cert-card cert-card--sec"><h4>Technical Support Fundamentals</h4><div class="cert-card__issuer">Google · Aug 2023 · ID: RA9PAK4BF56N</div><div class="cert-card__tags"><span>Networking Hardware</span></div><span class="badge badge--done">Earned</span></div>
+        <div class="cert-card cert-card--web"><h4>Web Development Certificate</h4><div class="cert-card__issuer">CodePath · ID: 253645</div><div class="cert-card__tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div><span class="badge badge--done">Earned</span></div>
+        <div class="cert-card cert-card--shared"><h4>HR Foundations: Core Human Resources</h4><div class="cert-card__issuer">LinkedIn · Nov 2024</div><div class="cert-card__tags"><span>Human Resources</span></div><span class="badge badge--done">Earned</span></div>
+        <div class="cert-card cert-card--shared"><h4>Amazon Tier 1 Development Program</h4><div class="cert-card__issuer">Amazon</div><div class="cert-card__tags"><span>Goal Setting</span><span>Leadership</span></div><span class="badge badge--done">Earned</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ CONTACT ═══ -->
+  <section id="contact" class="section section--dark">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <div class="section__header fade-up">
+            <div class="eyebrow"><span class="eyebrow__num">06</span><span class="eyebrow__line"></span><span class="eyebrow__text">Contact</span></div>
+            <h2 class="section__title">Let's Work<br>Together.</h2>
+          </div>
+          <p class="contact-sub fade-up">I'm actively seeking roles in data analytics, information security, or IT — and open to opportunities that leverage all three skill sets.</p>
+          <div class="avail-badge fade-up"><span class="avail-dot"></span> Open to Opportunities</div>
+
+          <div class="contact-items fade-up">
+            <div class="contact-item"><div class="contact-item__icon">📧</div><div><div class="contact-item__lbl">Email</div><div class="contact-item__val"><a href="mailto:glodimbongo1@gmail.com">glodimbongo1@gmail.com</a></div></div></div>
+            <div class="contact-item"><div class="contact-item__icon">📞</div><div><div class="contact-item__lbl">Phone</div><div class="contact-item__val">(502) 751-7052</div></div></div>
+            <div class="contact-item"><div class="contact-item__icon">📍</div><div><div class="contact-item__lbl">Location</div><div class="contact-item__val">Louisville, KY</div></div></div>
+            <div class="contact-item"><div class="contact-item__icon">🔗</div><div><div class="contact-item__lbl">LinkedIn</div><div class="contact-item__val"><a href="https://linkedin.com/in/glodi-mbongo" target="_blank" rel="noreferrer">linkedin.com/in/glodi-mbongo</a></div></div></div>
+            <div class="contact-item"><div class="contact-item__icon">💻</div><div><div class="contact-item__lbl">GitHub</div><div class="contact-item__val"><a href="https://github.com/glodimbongo" target="_blank" rel="noreferrer">github.com/glodimbongo</a></div></div></div>
+          </div>
+        </div>
+
+        <form class="contact-form fade-up" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="fg"><label for="firstName">First Name *</label><input type="text" id="firstName" name="firstName" placeholder="Jane" required /></div>
+            <div class="fg"><label for="lastName">Last Name</label><input type="text" id="lastName" name="lastName" placeholder="Smith" /></div>
+          </div>
+          <div class="fg"><label for="email">Email Address *</label><input type="email" id="email" name="email" placeholder="jane@company.com" required /></div>
+          <div class="fg"><label for="company">Company / Organisation</label><input type="text" id="company" name="company" placeholder="Acme Corp" /></div>
+          <div class="fg">
+            <label for="interest">Area of Interest</label>
+            <select id="interest" name="interest">
+              <option value="">Select a track...</option>
+              <option>Data Analytics Role</option>
+              <option>Information Security Role</option>
+              <option>IT Support Role</option>
+              <option>Web Development Project</option>
+              <option>Collaboration</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="fg"><label for="message">Message *</label><textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity or project you have in mind..." required></textarea></div>
+          <div class="form-footer">
+            <p class="form-note">Submitting will open your email client with the form data pre-filled.</p>
+            <button type="submit" class="btn btn--solid" id="submitBtn">Send Message</button>
+          </div>
+          <div class="form-success" id="formSuccess">✓ Opening email client...</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer__copy">© <span id="footerYear"></span> <span class="accent">Glodi Mbongo</span> — Data Analytics · Info Security · Web Dev</div>
+    <div class="footer__links">
+      <a href="https://linkedin.com/in/glodi-mbongo" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="https://github.com/glodimbongo" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="mailto:glodimbongo1@gmail.com">Email</a>
+    </div>
+    <button class="footer__top" id="backToTop" aria-label="Back to top">↑ Top</button>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
 </html>

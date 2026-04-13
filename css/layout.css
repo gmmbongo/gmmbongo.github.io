@@ -1,0 +1,217 @@
+/* css/layout.css — Base layout, nav, footer */
+
+/* ── Body ── */
+body {
+  background: var(--navy);
+  color: var(--mid);
+  font-family: var(--font-body);
+  font-size: 16px;
+}
+
+/* Noise overlay */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9000;
+  opacity: 0.022;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ── Wrap ── */
+.wrap {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: var(--py) var(--px);
+}
+
+/* ── NAV ── */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--px);
+  height: var(--nav-h);
+  background: rgba(7, 17, 31, 0.92);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.nav.scrolled {
+  background: rgba(7, 17, 31, 0.98);
+  border-color: var(--border-md);
+}
+
+.nav__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.nav__name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.3px;
+}
+
+.nav__sub {
+  font-size: 0.56rem;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+
+.nav__links {
+  display: flex;
+  gap: 2px;
+}
+
+.nav__link {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--slate);
+  padding: 7px 13px;
+  position: relative;
+  transition: color 0.25s;
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: 3px; left: 13px; right: 13px;
+  height: 1px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.25s;
+}
+
+.nav__link:hover,
+.nav__link.active {
+  color: var(--gold);
+}
+
+.nav__link:hover::after,
+.nav__link.active::after {
+  transform: scaleX(1);
+}
+
+/* Hamburger */
+.nav__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 6px;
+}
+
+.nav__hamburger span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--mid);
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.nav__hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav__hamburger.open span:nth-child(2) { opacity: 0; }
+.nav__hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* Mobile drawer */
+.nav__drawer {
+  display: none;
+  position: fixed;
+  top: var(--nav-h);
+  left: 0; right: 0;
+  background: rgba(10, 20, 35, 0.98);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  flex-direction: column;
+  padding: 12px 0 20px;
+  z-index: 499;
+}
+
+.nav__drawer.open {
+  display: flex;
+}
+
+.nav__drawer-link {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--slate);
+  padding: 14px var(--px);
+  border-left: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.nav__drawer-link:hover,
+.nav__drawer-link.active {
+  color: var(--gold);
+  border-left-color: var(--gold);
+}
+
+/* ── Sections ── */
+.section {
+  padding-top: 0;
+}
+
+.section--dark { background: var(--navy); }
+.section--mid  { background: var(--navy-mid); }
+
+/* ── Footer ── */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 20px var(--px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer__copy {
+  font-size: 0.72rem;
+  color: var(--slate);
+}
+
+.footer__links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__links a {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--slate);
+  transition: color 0.2s;
+}
+
+.footer__links a:hover { color: var(--gold); }
+
+.footer__top {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--slate);
+  border: 1px solid var(--border);
+  padding: 5px 12px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.footer__top:hover {
+  color: var(--gold);
+  border-color: var(--gold-line);
+}
